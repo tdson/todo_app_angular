@@ -8,11 +8,13 @@ import { ShowTodoComponent } from './show-todo/show-todo.component';
 import {RoutesModule} from './config/routes.module';
 
 import {TodoService} from './services/todo.service';
+import { IndexTodoComponent } from './index-todo/index-todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowTodoComponent
+    ShowTodoComponent,
+    IndexTodoComponent
   ],
   imports: [
     BrowserModule,

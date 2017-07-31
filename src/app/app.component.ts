@@ -9,17 +9,17 @@ import { Todo } from './models/todo';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Todo List';
-  todos: Todo[];
-  selectedTodo: Todo;
-
-  constructor(private todoService: TodoService) {}
-
+  // title = 'Todo List';
+  // todos: Todo[];
+  // selectedTodo: Todo;
+  //
+  // constructor(private todoService: TodoService) {}
+  //
   ngOnInit(): void {
-    this.todoService.index().then(todos => this.todos = todos);
+    // this.todoService.index().then(todos => this.todos = todos);
   }
-
-  onSelect(todo: Todo): void {
-    this.selectedTodo = todo;
-  }
+  //
+  // onSelect(todo: Todo): void {
+  //   this.selectedTodo = todo;
+  // }
 }
