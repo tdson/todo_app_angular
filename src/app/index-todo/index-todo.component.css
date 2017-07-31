@@ -1,5 +1,5 @@
 .container {
-  width: 30%;
+  width: 35%;
   margin: 30px auto;
 }
 
@@ -20,6 +20,7 @@
 .container li {
   padding: 15px 10px;
   position: relative;
+  height: 105px;
 }
 
 .container li:hover {
