@@ -1,3 +1,17 @@
-<p>
-  show-todo works!
-</p>
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<div class="container">
+  <div *ngIf="todo">
+    <textarea class="form-control"
+    rows="8"
+    placeholder="Input content..."
+    [(ngModel)]="todo.content" ></textarea>
+    <div class="btns">
+      <button (click)="back()" class="btn btn-default">Trở lại</button>
+      <button (click)="save()" class="btn btn-primary">Lưu</button>
+    </div>
+  </div>
+</div>

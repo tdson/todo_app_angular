@@ -1,0 +1,9 @@
+.container {
+  width: 35%;
+  margin: 30px auto;
+}
+
+.container .btns {
+  margin-top: 20px;
+  text-align: right;
+}

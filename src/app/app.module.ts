@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ShowTodoComponent } from './show-todo/show-todo.component';
@@ -19,7 +20,8 @@ import { IndexTodoComponent } from './index-todo/index-todo.component';
   imports: [
     BrowserModule,
     RoutesModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]

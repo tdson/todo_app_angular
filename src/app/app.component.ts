@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { TodoService } from './services/todo.service';
 import { Todo } from './models/todo';
+import axios from 'axios';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,9 @@ export class AppComponent implements OnInit {
   //
   ngOnInit(): void {
     // this.todoService.index().then(todos => this.todos = todos);
+
+    axios.defaults.headers.common['Authorization'] = 'bearer 7ce021b9a6e1dec6067761971c145fbeb76fcd568f1004eab2962eecb9834a38';
+    axios.defaults.headers.post['Content-Type'] = 'application/json';
   }
   //
   // onSelect(todo: Todo): void {
